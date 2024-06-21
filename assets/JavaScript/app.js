@@ -2,9 +2,10 @@
 
 
 
-async function getApiPerfilHub() {
+async function getApiPerfilGitHub() {
 
     const dadosP = document.querySelector('.content-dados');
+    const dadosAmigos = document.querySelector('.colegas');
     let res = await fetch('https://api.github.com/users/JulioCAvilaS');
     let data = await res.json();
     let perfilHTML = '';
@@ -66,6 +67,28 @@ async function getApiPerfilHub() {
 
 }
 
+async function getApiAmigosGitHub() {
+
+    const dadosAmigos = document.querySelector('#colegas');
+    let res = await fetch('https://api.github.com/users/JulioCAvilaS/followers');
+    let data = await res.json();
+    let amigosHTML = '';
+
+    for (let item of data){
+        amigosHTML += ` 
+        <div class="fs-4 mt-2  col-4 col-md-2">
+            <a href="${item.url}" class="link-underline link-underline-opacity-0 text-black">
+                <img src="${item.avatar_url}" class="img-thumbnail " alt="...">
+                <p class="text-center">${item.login}</p>
+                </a>
+            </div>
+        
+        `;
+    }
+    
+    dadosAmigos.innerHTML = amigosHTML;
+}
+
 async function getApiGitHub() {
     const repositorios = document.querySelector('.content-main');
     try {
@@ -107,5 +130,6 @@ async function getApiGitHub() {
     }
 }
 
+getApiAmigosGitHub() 
 getApiGitHub();
-getApiPerfilHub();
+getApiPerfilGitHub();

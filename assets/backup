@@ -1,0 +1,188 @@
+ <div class="row">
+        <nav class="fs-4 col-12 navbar navbar-expand-lg ">
+            <a class="navbar-brand " href="index.html">
+                <h2 class="px-5">Júlio Ávila</h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="px-3 navbar-toggler-icon"></span>
+            </button>
+            <div class="sidebar offcanvas offcanvas-end border-bottom" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LINK 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LINK 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LINK 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container ">
+
+        <div class="row">
+            <h4 class=" col-12">Repositório: Lorem ipsum dolor sit amet.</h4>
+        </div>
+        <div class="row border-top border-dark row  border-top border-dark">
+            <p class="text-primary mt-2">
+                Nome do criador
+            </p>
+            <div class=" col-8 col-sm-3 col-lg-2 ">
+                <img src="Imagens/ícone perfil.png" class="img-thumbnail " alt="...">
+            </div>
+        </div>
+        <div class=" row">
+            <P class="text text-primary">Descrição</P>
+            <p class="text-break">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil asperiores corrupti
+                modi, doloribus sunt nisi dolorum repellat ab tempore fugiat quibusdam itaque fugit sed veniam dolorem
+                laboriosam ut eum enim? Voluptatibus corporis temporibus, illo ullam doloribus officia illum veniam
+                necessitatibus totam reprehenderit eum maiores consequatur placeat molestiae rem quos quas!
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-9">
+
+
+                <P class="text text-primary">Data da criação</P>
+                <P class="text">21-10-2023</P>
+                <p>linguagem</p>
+
+                <P class="text text-primary">Link de acesso</P>
+                <a href="https://pucminas.br/fulanodetal"
+                    class="text-black pe-3 link-underline link-underline-opacity-0">
+                    Site: https://pucminas.br/MarceloAlmeida
+                </a>
+
+            </div>
+
+            <div class="col col-md-2 col-sm-2">
+                <div class="float-md-end fs-4 ">
+
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        3
+                    </div>
+
+                    <div class="float-md-end  fs-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                        </svg>
+                        2
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <P class="text text-primary">Tópicos</P>
+                    <div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">
+                        JavaScript
+                    </div>
+                    <div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">
+                        DevOps
+                    </div>
+                    <div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">
+                        FrontEnd
+                    </div>
+                    <div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">
+                        React
+                    </div>
+                    <div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">
+                        ReactNative
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        pags.innerHTML = `
+                            <div class="container">
+                                <div class="row">
+                                    <h4 class="col-12">${item.name}</h4>
+                                </div>
+                                <div class="row border-top border-dark">
+                                    <p class="text-primary mt-2">Nome do criador</p>
+                                    <div class="col-8 col-sm-3 col-lg-2">
+                                        <img src="${item.owner.avatar_url}" class="img-thumbnail" alt="...">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text text-primary">Descrição</p>
+                                    <p class="text-break">${readmeData}</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-9">
+                                        <p class="text text-primary">Data da criação</p>
+                                        <p class="text">${new Date(item.created_at).toLocaleDateString()}</p>
+                                        <p>Linguagem: ${item.language}</p>
+                                        <p class="text text-primary">Link de acesso</p>
+                                        <a href="${item.html_url}" class="text-black pe-3 link-underline link-underline-opacity-0">
+                                            Site: ${item.html_url}
+                                        </a>
+                                    </div>
+                                    <div class="col col-md-2 col-sm-2">
+                                        <div class="float-md-end fs-4">
+                                            <div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                                    class="bi bi-person-fill" viewBox="0 0 16 16">
+                                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                                </svg>
+                                                ${item.watchers_count}
+                                            </div>
+                                            <div class="float-md-end fs-4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                                    class="bi bi-star" viewBox="0 0 16 16">
+                                                    <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z" />
+                                                </svg>
+                                                ${item.stargazers_count}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text text-primary">Tópicos</p>
+                                        ${item.topics.map(topic => `<div class="badge text-bg-primary text-wrap pt-2 my-2" style="width: 7rem; height: 2rem;">${topic}</div>`).join('')}
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+
+                        repositorios.appendChild(pags);

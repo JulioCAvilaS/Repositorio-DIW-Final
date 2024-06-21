@@ -1,0 +1,71 @@
+{
+  "caroussel": [
+    {
+      "IdentificadorDoConteúdo": 1,
+      "Título do conteúdo": "Brasil terá déficit de 530 mil profissionais de tecnologia até 2025, mostra estudo do Google",
+      "Descrição do conteúdo": "Notícia sobre o deficit de trabalhadores na área de tecnologia",
+      "URLdaimagemdecapadoalbum": "https://s2-g1.glbimg.com/IABzn4JhJcKXiKyNxc5Q2BXmez0=/0x0:3000x2000/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/K/C/7rVhLaSBKHbCfcuXBt2w/patricia-soulcode-foto-celso-tavares-g1-5-de-110-.jpg",
+      "URL do conteúdo": "https://g1.globo.com/trabalho-e-carreira/noticia/2023/05/31/brasil-tera-deficit-de-530-mil-profissionais-de-tecnologia-ate-2025-mostra-estudo-do-google.ghtml"
+    },
+    {
+      "IdentificadorDoConteúdo": 2,
+      "Título do conteúdo": "GitHub lança várias iniciativas em prol da acessibilidade; confira",
+      "Descrição do conteúdo": "Notícia sobre o novo projeto de inclusão do git hub",
+      "URLdaimagemdecapadoalbum": "https://tm.ibxk.com.br/2024/05/24/github-24180009742264.jpg?ims=704x",
+      "URL do conteúdo": "https://www.tecmundo.com.br/internet/283361-github-mantem-cultura-reforca-compromisso-acessibilidade.htm"
+    },
+    {
+      "IdentificadorDoConteúdo": 3,
+      "Título do conteúdo": "Curso de programação: 5 opções para estudar em 2024",
+      "Descrição do conteúdo": "Notícia indicando caminhos de ingresso na programação",
+      "URLdaimagemdecapadoalbum": "https://tm.ibxk.com.br/2024/01/04/04111129353099.jpeg?ims=1280x480",
+      "URL do conteúdo": "https://www.tecmundo.com.br/produto/275551-curso-programacao-5-opcoes-estudar-2024.htm"
+    },
+    {
+      "IdentificadorDoConteúdo": 4,
+      "Título do conteúdo": "Em parceria com edtech, streamer Gaules oferece bolsas de estudos para curso de programação",
+      "Descrição do conteúdo": "Notícia mostrando a parceria do Gaules com edtech",
+      "URLdaimagemdecapadoalbum": "https://classic.exame.com/wp-content/uploads/2021/11/Gaules.jpeg?ims=750x/filters:quality(75):format(webp)",
+      "URL do conteúdo": "https://exame.com/carreira/em-parceria-com-edtech-streamer-gaules-oferece-bolsas-de-estudo-para-curso-de-programacao/"
+    },
+    {
+      "IdentificadorDoConteúdo": 5,
+      "Título do conteúdo": "Reprograma está com 40 vagas para curso de programação exclusivo para mulheres",
+      "Descrição do conteúdo": "Notícia indicando uma vaga para um curso específico para mulheres",
+      "URLdaimagemdecapadoalbum": "https://classic.exame.com/wp-content/uploads/2018/01/programador.png?ims=750x/filters:quality(75):format(webp)",
+      "URL do conteúdo": "https://exame.com/carreira/reprograma-esta-com-40-vagas-para-curso-de-programacao-exclusivo-para-mulheres/"
+    }
+  ],
+  "colegas": [
+    {
+      "Id do colega": 162313514,
+      "URLfoto": "https://avatars.githubusercontent.com/u/162313514?v=4",
+      "Nome": "Diogodrt",
+      "URLperfil": "https://github.com/Diogodrt"
+    },
+    {
+      "Id do colega": 166033786,
+      "URLfoto": "https://avatars.githubusercontent.com/u/166033786?v=4",
+      "Nome": "Anael-Fer",
+      "URLperfil": "https://github.com/Anael-Fer"
+    },
+    {
+      "Id do colega": 166047629,
+      "URLfoto": "https://avatars.githubusercontent.com/u/166047629?v=4",
+      "Nome": "kelvin-lemos",
+      "URLperfil": "https://github.com/kelvin-lemos"
+    },
+    {
+      "Id do colega": 166351955,
+      "URLfoto": "https://avatars.githubusercontent.com/u/166351955?v=4",
+      "Nome": "cybergiuli",
+      "URLperfil": "https://github.com/cybergiuli"
+    },
+    {
+      "Id do colega": 166555619,
+      "URLfoto": "https://avatars.githubusercontent.com/u/166555619?v=4",
+      "Nome": "pedropdh",
+      "URLperfil": "https://github.com/pedropdh"
+    }
+  ]
+}

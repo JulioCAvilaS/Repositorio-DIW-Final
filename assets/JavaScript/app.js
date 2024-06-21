@@ -1,7 +1,3 @@
-
-
-
-
 async function getApiPerfilGitHub() {
 
     const dadosP = document.querySelector('.content-dados');
@@ -67,19 +63,19 @@ async function getApiPerfilGitHub() {
 
 }
 
-async function getApiAmigosGitHub() {
+async function getAmigosGitHub() {
 
     const dadosAmigos = document.querySelector('#colegas');
-    let res = await fetch('https://api.github.com/users/JulioCAvilaS/followers');
+    let res = await fetch('http://localhost:3000/colegas');
     let data = await res.json();
     let amigosHTML = '';
 
     for (let item of data){
         amigosHTML += ` 
         <div class="fs-4 mt-2  col-4 col-md-2">
-            <a href="${item.url}" class="link-underline link-underline-opacity-0 text-black">
-                <img src="${item.avatar_url}" class="img-thumbnail " alt="...">
-                <p class="text-center">${item.login}</p>
+            <a href="${item.URLperfil}" class="link-underline link-underline-opacity-0 text-black">
+                <img src="${item.URLfoto}" class="img-thumbnail " alt="...">
+                <p class="text-center">${item.Nome}</p>
                 </a>
             </div>
         
@@ -89,12 +85,51 @@ async function getApiAmigosGitHub() {
     dadosAmigos.innerHTML = amigosHTML;
 }
 
+async function getFotosGitHub() {
+    const dadosFotos = document.querySelector('#car');
+    let res = await fetch('http://localhost:3000/caroussel');
+    let data = await res.json();
+    let fotosHTML = '';
+
+    if (data.length > 0) {
+        fotosHTML += `
+        <div id="carouselExampleIndicators" class="carousel slide mt-2">
+            <div class="carousel-indicators">
+                ${data.map((_, index) => `
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" 
+                        class="${index === 0 ? 'active' : ''}" aria-current="true" aria-label="Slide ${index + 1}">
+                    </button>`).join('')}
+            </div>
+            <div class="carousel-inner">
+                ${data.map((item, index) => `
+                    <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                        <img src="${item.URLdaimagemdecapadoalbum}" class="d-block w-100" alt="...">
+                    </div>`).join('')}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        `;
+    } else {
+        fotosHTML = '<p>No images found.</p>';
+    }
+
+    dadosFotos.innerHTML = fotosHTML;
+}
+
+
+
 async function getApiGitHub() {
     const repositorios = document.querySelector('.content-main');
     try {
         let res = await fetch('https://api.github.com/users/JulioCAvilaS/repos');
         let data = await res.json();
-
         let cardsHTML = '';
 
         for (let item of data) {
@@ -130,6 +165,9 @@ async function getApiGitHub() {
     }
 }
 
-getApiAmigosGitHub() 
+
+
+getFotosGitHub()
+getAmigosGitHub() 
 getApiGitHub();
 getApiPerfilGitHub();
